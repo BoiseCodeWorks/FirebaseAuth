@@ -1,0 +1,47 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Firebase Auth</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<style>
+		body {
+			margin: 20px;
+		}
+	</style>
+</head>
+
+<body ng-app="firebaseAuth">
+
+	<div class="container">
+		<div>
+			<register></register>
+		</div>
+		<div>
+			<login></login>
+		</div>
+	</div>
+
+	<script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyBuT8wOQHbbQz6VqslaPOV2ja3x_pDC3nA",
+			authDomain: "immersivefall2016.firebaseapp.com",
+			databaseURL: "https://immersivefall2016.firebaseio.com",
+			storageBucket: "immersivefall2016.appspot.com",
+			messagingSenderId: "1068872184191"
+		};
+		firebase.initializeApp(config);
+	</script>
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.min.js"></script>
+	<script src="app.js"></script>
+	<script src="register.js"></script>
+	<script src="login.js"></script>
+</body>
+
+</html>
